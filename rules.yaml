@@ -1,0 +1,10 @@
+%YAML 1.3
+---
+- Key: [Mission Control/Task View, pressed]
+- Execute: [/usr/bin/dbus-send, --session, --dest=org.pantheon.gala, --print-reply,
+    /org/pantheon/gala, org.pantheon.gala.PerformAction, 'int32:1']
+...
+---
+- Key: [Calculator, pressed]
+- Execute: [/usr/bin/flatpak, run, io.elementary.calculator]
+...
